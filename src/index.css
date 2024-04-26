@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* :root{
+    --text-color : #e945e3;
+    --bg-gradient: background-image: linear-gradient(to right , #d02e23 , #7a43b6);
+    --bg-color : #010824;
+} */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh !important;
+    background-color: #010824;
+    background-image: repeating-linear-gradient(to right, transparent 0 49px, #eee1 49px 50px),
+        repeating-linear-gradient(to bottom, transparent 0 49px, #eee1 49px 50px) !important;
+    &::before {
+        position: fixed;
+        content: "";
+        width: 400px;
+        height: 400px;
+        background-image: linear-gradient(to right, #d02e23, #7a43b6);
+        filter: blur(250px);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
