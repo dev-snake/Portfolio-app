@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 const Navbar = () => {
     const [listNavbar] = useState([
         { name: "Home", path: "/" },
-        { name: "About", path: "/about" },
+        { name: "About", path: "/about-me" },
         { name: "My CV", path: "/mycv" },
-        { name: "Projects", path: "/project" },
+        { name: "Projects", path: "/projects" },
     ]);
     const [type, setType] = useState("Home");
     // useEffect(() => {

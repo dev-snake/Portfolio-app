@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className="mt-[4rem]">
             <hr />
-            <p className="text-white p-[1rem] text-center text-[1.7rem] tracking-[.3rem] font-semibold">
+            <p className="text-[#fff] text-[1.8rem] tracking-[1.4px] text-center font-museo p-[1rem]">
                 haud<span className="uppercase font-museo text-[#fff]">g</span>.Fe
             </p>
             <div>
@@ -21,7 +21,7 @@ const Footer = () => {
                                 key={name}
                                 className="border-2 pt-[0.8rem] pb-[0.8rem] pl-[1rem] pr-[1rem] border-white rounded-2xl"
                             >
-                                <a href={`https://www.${name}.com/haudangFE`} target="_blank">
+                                <a href="" target="_blank">
                                     <FontAwesomeIcon
                                         icon={icon}
                                         className="text-white text-[1.2rem] mt-1"

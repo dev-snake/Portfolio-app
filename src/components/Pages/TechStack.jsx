@@ -32,12 +32,12 @@ const TechStack = ({ techStack }) => {
                             >
                                 <div
                                     className="text-[#fff] text-center backdrop-blur-2xl 
-                                       rounded-md p-[1rem] h-[265px] drop-shadow-lg border-[1px] border-[#eee3]"
+                                                rounded-md p-[1rem] h-[265px] drop-shadow-lg border-[1px]
+                                                border-[#eee3]"
                                 >
                                     <FontAwesomeIcon
                                         icon={icon}
-                                        className="text-[3rem] block mx-auto"
-                                        style={{ color: color }}
+                                        className={`text-[3rem] block mx-auto text-[${color}]`}
                                     />
                                     <h3 className="text-[#fff] text-[1.2rem] font-semibold mt-[1rem]">
                                         {name}

@@ -2,7 +2,21 @@ import React from "react";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-const AboutMe = ({ aboutMe }) => {
+const AboutMe = () => {
+    const [aboutMe] = useState([
+        {
+            name: "Github",
+            icon: faGithub,
+        },
+        {
+            name: "Facebook",
+            icon: faFacebook,
+        },
+        {
+            name: "Instagram",
+            icon: faInstagram,
+        },
+    ]);
     return (
         <section>
             <div className="mt-[1rem]">
